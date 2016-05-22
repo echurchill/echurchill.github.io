@@ -1,0 +1,511 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>&nbsp;</p>
+
+<p>v3.011</p>
+
+<ul>
+	<li>Removed the Enchanting Tables from libraries (meant to get earlier but forgot to)</li>
+	<li>Fixed a few glitches in decayed and nether worlds (farms didn&#39;t get destroyed, too much water not enough lava, etc.)</li>
+	<li>Changed the paths in parks and buried logs in farms with Grass Paths (what good are new materials if I never use them)</li>
+	<li>Fixed mobs spawning on oil rigs and hot air balloons</li>
+	<li>Enemy generation is now more controllable via SpawnEnemy percentage option</li>
+	<li>Reeds are back near the shores, they disappeared about a year ago, like roundabouts - sigh, I wonder what else has gone missing</li>
+	<li>Fixed up some fluid generation issues (generalized version of the above nether world fix)</li>
+	<li>Enhanced Parks a bit more and made country roads a bit more country-ish</li>
+	<li>Made things camouflage better in the mountains</li>
+	<li>More corner styles, because why not :-)</li>
+	<li>Made buddy, animal, enemy and spawn lists configurable, keep in mind these lists can only contain living entities right now</li>
+	<li>Renamed a few settings to make mob spawning more controllable</li>
+	<li>Tweaked the factory big chimney&#39;s height a bit, now they aren&#39;t quite a tall</li>
+	<li>Minecraft (as of 1.9.4) and Spigot (as of 5/20) happy</li>
+</ul>
+
+<p>v3.010</p>
+
+<ul>
+	<li>Fixed a code error that goofed up generation range limits</li>
+</ul>
+
+<p>v3.009</p>
+
+<ul>
+	<li>Finally added villagers (in houses) and animal spawning (in farms)</li>
+	<li>Finally added stuff to concrete lots, think urban non-parks parks</li>
+	<li>Fixed a glitch that prevented grass and flowers in certain lots that should have had them</li>
+	<li>More roof styles</li>
+	<li>More default wall &amp; ceiling material for buildings</li>
+	<li>More vat &amp; pit materials in factories</li>
+</ul>
+
+<p>v3.008</p>
+
+<ul>
+	<li>Fixed a bug where factory skywalk supports would go too far up in a destroyed world</li>
+</ul>
+
+<p>v3.007</p>
+
+<ul>
+	<li>Refactored the corner of building code to make it much easier to maintain</li>
+	<li>Made it so that external doors in buildings don&#39;t get covered up anymore</li>
+	<li>Fixed some destroyed and factory building issues</li>
+	<li>Added METRO to easy world styles</li>
+</ul>
+
+<p>v3.006</p>
+
+<ul>
+	<li>Bad pointer leads to bad things</li>
+</ul>
+
+<p>v3.005</p>
+
+<ul>
+	<li>Whole lot more styles of buildings (more balconies, corners, roofs, indents, etc.)</li>
+	<li>Roundabouts are back, they disappeared about 2 to 3 years ago... why didn&#39;t anyone (including me) notice?</li>
+	<li>Fixed up bunkers, campgrounds and oil rig platforms</li>
+	<li>Made the highrises even higher</li>
+	<li>Touched up roads, man holes and made the sewers slightly crazier</li>
+	<li>Fixed an issue that prevented Hotair balloons from being found out in the wild</li>
+	<li>Added factories (of a sort) to the industrial areas</li>
+	<li>Added NATURE to the easy world styles</li>
+</ul>
+
+<p>v3.004</p>
+
+<ul>
+	<li>Cranes now render correctly in 1.9 again, Mojang changed how Iron Fences rendered</li>
+	<li>Unfinished buildings now follow similar rules to normal buildings</li>
+	<li>Even more styles of buildings, woot!</li>
+	<li>And a few Paddocks</li>
+	<li>Fixed a few bugs</li>
+</ul>
+
+<p>v3.003</p>
+
+<ul>
+	<li>Fixed a bug in Woodframe lots that would sometimes cause exceptions</li>
+</ul>
+
+<p>v3.002</p>
+
+<ul>
+	<li>Now supports Minecraft/Spigot 1.9 (or I think it does) and was tested against PI day build of Spigot</li>
+	<li>Added an option to turn off things like Hot Air Balloons for folks who don&#39;t like fun things in the air ;-)</li>
+	<li>Add material lists for astral, bunkers and water towers generation, yes I know there still more to do</li>
+	<li>Reduced the likelihood of Museums, sorry about that</li>
+	<li>Farms now can grow BeetRoots, Yumm!</li>
+	<li>More building and roof styles</li>
+	<li>MAYBE ISSUE: It seems to me that Minecraft/Spigot 1.9 causes CityWorld to generate worlds slower, but I could be wrong</li>
+	<li>Fixed bugs</li>
+</ul>
+
+<p>v3.001</p>
+
+<ul>
+	<li>Finally got the fossils generating... and Museums :-)</li>
+	<li>Fixed a long standing tree generation bug... and added the occasional dead tree trunk</li>
+</ul>
+
+<p>v3.000</p>
+
+<ul>
+	<li>The majority of materials used during building generation are now configurable (lists are maintained in the cityworld&#39;s yml file)</li>
+	<li>All chest content generation is now configurable (phatloot should still work if you really need it)</li>
+	<li>Road material is now configurable, don&#39;t like clay... change it</li>
+	<li>Added new lot types to world (hot air balloons, water towers, park mazes, barns, etc.)</li>
+	<li>Brought over some of the Maze world lots to normal worlds (lumber yards, quarries, camp grounds, etc.)</li>
+	<li>Created a way to invert the range generation logic, now you can generate cities that surround a center of nature instead of the other way around</li>
+	<li>Lots of refactoring and tweaking, world generation will likely change... sorry but it couldn&#39;t be helped</li>
+	<li>Fixed a number of bugs that have been bothering me</li>
+</ul>
+
+<p>v2.997</p>
+
+<ul>
+	<li>Oops left in some debug diamond block generation in, ironically enough, the farms</li>
+	<li>Made door generation in empty buildings even rarer</li>
+</ul>
+
+<p>v2.996</p>
+
+<ul>
+	<li>Built against MineCraft 1.8.8, Spigot XXX, WorldEdit 6.1.0, PhatLoots 4.1.0</li>
+	<li>Fixed some generation issues related to subsurfaces in floating worlds, upside is now you have more options for it. See SubSurfaceStyle for option.</li>
+	<li>Spigot 1.8.x seems to be double generating some chunks, put in code to avoid it happening. This was making Farms create really odd hybrid plants... like CactusRoses and FernGrass.</li>
+	<li>Forgot to document tree styles. See TreeStyle for options.</li>
+	<li>Fixed a bug that allowed worlds with decayed nature to have normal biomes, now their biomes are wholly set to desert.</li>
+	<li>WARNING: WorldEdit itself has changed quite a bit, I haven&#39;t tried to update the CityWorld for the latest incarnation of WorldEdit. If it works, great. If not, it will eventually. SORRY</li>
+</ul>
+
+<p><br type="_moz" />
+<strong>The above versions are found at&nbsp;<a href="https://www.spigotmc.org/resources/cityworld.2250/">https://www.spigotmc.org/resources/cityworld.2250/</a></strong></p>
+
+<p><strong>---------------------------</strong></p>
+
+<p><strong>The versions below are found at <a href="http://dev.bukkit.org/bukkit-plugins/cityworld/">http://dev.bukkit.org/bukkit-plugins/cityworld/</a></strong></p>
+
+<p>v2.992</p>
+
+<ul>
+	<li>Maze world now works, what I was referring to as Zea earlier. Think: MazeRunner but without the bad acting. Give it a whirl, the Zombie servers out there should find this enjoyable. Still a work in progress, more to come</li>
+	<li>For folks using Multiverse, try &quot;mv create MazeWorld normal -g CityWorld:Maze&quot;. Other multiworld plugins will use a different syntax, see your plugin docs for more info.</li>
+	<li>Fixed Floating&#39;s IncludeFloatingSubsurface option and documented it finally. If you set this to false then the world the cities are floating over won&#39;t be generated.</li>
+</ul>
+
+<p>v2.991<br />
+Added a lot more stuff to Astral (buried cities, empty bases, abandoned saucers, strange forests, strange towers and much more...)<br />
+Next up: Zea World, along with some other customization suggested by you guys</p>
+
+<p>v2.99</p>
+
+<ul>
+	<li>Added DESTROYED to the world style list to make it easier to create normal but decayed worlds. For folks using Multiverse try &quot;mv create Destroyed normal -g CityWorld:Destroyed&quot;. Other multiworld plugins will use a different syntax, see your plugin docs for more info.</li>
+	<li>Added a lot more stuff to Astral, including a place holder for the Nexus</li>
+</ul>
+
+<p>v2.98</p>
+
+<ul>
+	<li>Fixed a bug where chests would be populated with ores instead of useful stuff</li>
+	<li>Fixed a bug where trees would cause house roofs to generate oddly</li>
+	<li>Re-textured the sewers to make them nicer to look at... a lot more spooky and &quot;realistic&quot;</li>
+	<li>Re-textured the roads to make them nicer to look at... and make those darn ores quit showing up</li>
+	<li>Continuing to work on Astral, feel free to visit but don&#39;t expect much yet. For folks using Multiverse try &quot;mv create Astral normal -g CityWorld:Astral&quot;. Other multiworld plugins will use a different syntax, see your plugin docs for more info.</li>
+</ul>
+
+<p>v2.97</p>
+
+<ul>
+	<li>Massive refactor to make CityWorld 1.7.x happy, I hope I found all the regressions. There isn&rsquo;t a code file that didn&rsquo;t change in someway.</li>
+	<li>Isolated the magic values that are going away soon into a class called BlackMagic, this should make it easier to do the next update</li>
+	<li>Due to numerous problems I have replaced the custom tree delegates</li>
+	<li>I have removed all of the Tekkit specific code, it was causing a number of problems. I know it doesn&rsquo;t sound possible but this increases the likelihood that CityWorld will work with Tekkit since it now doesn&rsquo;t attempt to anything &ldquo;clever&rdquo;</li>
+	<li>House roofs have been improved</li>
+	<li>Farms now include every crop possible, including a few manually created ones</li>
+	<li>A lot more foliage types (both trees and plants)</li>
+	<li>Isolated buildings and cisterns should now be working again</li>
+	<li>Added snowmen to SnowDune world and foliage to SandDune</li>
+	<li>Decay now does not include debris that cannot be stack nicely (no more thin glass or carpet hanging about)</li>
+	<li>Revamped bunkers and added an official but camouflaged way to get into them</li>
+	<li>Added a way for server operators to know when a special lot is generated. Take a look at the output logs.</li>
+	<li>Bunkers and tunnels play better with each other</li>
+	<li>Started to work on a new world style called Astral but stopped to get this release out</li>
+	<li>Still no furniture in the Houses, Bunkers or Sheds, sorry</li>
+</ul>
+
+<p>v2.93</p>
+
+<ul>
+	<li>Tested against Minecraft 1.6.2, Bukkit 1.6.2-R0.1 and 1.6.1-R0.1. It should work against 1.6.2.R1 but generates a lot of deprecation warnings due to their, in my opinion, valid but premature attempt at removing &quot;Magic Values&quot;.</li>
+	<li>Added [[http://dev.bukkit.org/bukkit-plugins/cityworld/pages/styles/|three more world styles]]</li>
+	<li>Added latest Minecraft 1.6.2 materials</li>
+	<li>Fixed (and likely added) bugs, one really nasty one made all the isolated buildings in the mountains not generate ...oh yea, while fixing that I added occasional camp sites out in the mountains</li>
+	<li>For those who use PhatLoot, with help from Codisimus, I think it works now</li>
+	<li>Still no furniture in the Houses, Bunkers or Sheds, sorry</li>
+</ul>
+
+<p>v2.9</p>
+
+<ul>
+	<li>Tested against Bukkit 1.5.1-R0.2</li>
+	<li>BETA version of the furniture generators... a lot more to do but here ya go :-)</li>
+	<li>Added interior building furnishings</li>
+	<li>Added interior building walls</li>
+	<li>Added a lot of new stair styles</li>
+	<li>Still no furniture in the Houses, Bunkers or Sheds</li>
+	<li>Added latest Minecraft materials</li>
+	<li>Added **ForceLoadWorldEdit*for those of you who are using beta versions of WorldEdit, set it to true to skip version testing</li>
+	<li>Incorporated PhatLoots fixes by SpaceRibs (https://github.com/echurchill/CityWorld/commit/dad7faeb0712243e24be4fac0e73318d4dee2655)</li>
+	<li>Fixed some WorldEdit pasting issues</li>
+	<li>Fixed loads of other bugs</li>
+</ul>
+
+<p>v2.03</p>
+
+<ul>
+	<li>Now with Reeds!</li>
+</ul>
+
+<p>v2.02</p>
+
+<ul>
+	<li>Incorporated Forge/Tekkit block delegate support by brikeener (http://code.google.com/p/cityworld-tekkit/source)</li>
+	<li>Incorporated CityInfo command by Sablednah (https://github.com/echurchill/CityWorld/pull/4)</li>
+	<li>Added Decayable option to schematics</li>
+</ul>
+
+<p>v2.01</p>
+
+<ul>
+	<li>Fixed a silly glitch that made CityWorld fail if WorldEdit wasn&#39;t installed.</li>
+</ul>
+
+<p>v2.00</p>
+
+<ul>
+	<li>Added support for WorldEdit [[http://dev.bukkit.org/server-mods/cityworld/pages/schematics/|schematics]].</li>
+	<li>If you want to use this feature, you will need to make sure you have WorldEdit 5.4.2 installed.</li>
+	<li>Almost every file has changed, I am pretty sure some new bugs have been created while fixing</li>
+	<li>other ones but I hope the features now out number the bugs</li>
+	<li>Bukkit 1.3.2 happiness</li>
+	<li>Added a ruined castle up in the mountains</li>
+	<li>Added warehouses (double high single story buildings) in the industrial zone</li>
+	<li>Added storage lots (like radio tower bases but with &quot;stuff&quot;) in the industrial zone</li>
+	<li>Still no procedural interiors, sorry but I think the schematics feature makes up for it for now :-)</li>
+</ul>
+
+<p>v1.32</p>
+
+<ul>
+	<li>Now compiled for 1.6 again</li>
+</ul>
+
+<p>v1.31</p>
+
+<ul>
+	<li>Fixed an issue with MultiVerse (my fault, not theirs)</li>
+	<li>Tried to make config.yml a bit more bulletproof</li>
+</ul>
+
+<p>v1.30</p>
+
+<ul>
+	<li>Initial pass of 1.3.happiness</li>
+	<li>Added concept of MapStyle, this only allows for NORMAL and FLOATING worlds right now</li>
+	<li>Replaced RoadRange and CityRange with RoadChunkRadius and CityChunkRadius to make things more understandable</li>
+	<li>Added CenterPointOfChunkRadius to allow for more flexibility</li>
+	<li>Added ConstructChunkRadius to allow for isolated constructs, like oil platforms and mountain shacks, to be outside of road radius</li>
+	<li>Reduced the likelihood of rubber saplings in Tekkit worlds</li>
+	<li>Reworked the CityWorld command permissions to separate permissions for traveling to CityWorld vs. creating a CityWorld</li>
+	<li>Worked around a strange Chest/Sign casting issue to rarely happens but when it does is bad</li>
+	<li>More refactoring and optimization via [[http://dev.bukkit.org/server-mods/cityworld/pages/tools/|YourKit]]</li>
+</ul>
+
+<p>v1.10<br />
+Refactored tons of code to simplify options combinations and get things ready for End generation<br />
+Painting crosswalks on roads even if wool isn&#39;t being used<br />
+Made wool roads something you have opt into<br />
+Fixed a bunch of bugs associated with farms related to nether and decayed nature<br />
+Made the nether more nether like... including FIRE!<br />
+Decayed nature now doesn&#39;t mean Nether, which makes Normal worlds much more normal<br />
+Fixed an issue with 2 story houses where the attic stairs would sometimes lead to a block</p>
+
+<p>v1.07<br />
+Fixed a decayedNature vs. Normal world issue<br />
+Made the decayed signs a bit less decayed</p>
+
+<p>v1.06</p>
+
+<ul>
+	<li>Fixed a farming issue, the drought is over</li>
+</ul>
+
+<p>v1.05</p>
+
+<ul>
+	<li>Fixed a sewer generation issue, it is amazing what an extra &quot;!&quot; will do</li>
+	<li>Fixed a bunker generation issue</li>
+</ul>
+
+<p>v1.04</p>
+
+<ul>
+	<li>Added World generated as Nether automagically makes everything destroyed</li>
+	<li>Still working on TheEnd based worlds... it will be cool trust me :-)</li>
+	<li>Added decayed options for buildings, roads and nature</li>
+	<li>Fixed the crosswalks so they appear when they should</li>
+	<li>Fixed the disappearing radio town shacks (still happens but rarer)</li>
+	<li>Added streetnames... no it isn&#39;t customizable right now but might be soon</li>
+	<li>Fixed the tree distribution, more randomness and trees</li>
+	<li>Added city and road radius for folks who want a single city surrounded by nature</li>
+	<li>Made the stairs in the mineshafts a little less rickety looking</li>
+	<li>Added alcoves to the mineshafts to make the spawners and chests less obvious</li>
+	<li>Removed the silverfish from the sewers and mineshafts... yike!, that was a bad idea!</li>
+	<li>Oops, sometimes the vertical mineshafts go down beyond the bedrock... double yike!, that was even a worse idea!</li>
+	<li>Fixed a buggaboo that made the bunkers plots clear out too much rock and not generate caves correctly</li>
+	<li>Incorporated support for Tekkit material types base on initial work by gunre/adept</li>
+	<li>If options are used, I put in some sanity checks to make sure all the plots are actually filled with something</li>
+</ul>
+
+<p>v1.03</p>
+
+<ul>
+	<li>Cactus farms are back... I wonder what else got lost in the conurbation translation? :-)</li>
+	<li>Paved (wool) roads are in, including cross walks but sadly no lane lines... and yes, for those of you who hate wool, they can turned off</li>
+</ul>
+
+<p>v1.02</p>
+
+<ul>
+	<li>Might have &quot;fixed&quot; the versioning issue that Java was having</li>
+	<li>Reworked the ore distribution to speed things up a bit... AGAIN!</li>
+</ul>
+
+<p>v1.01</p>
+
+<ul>
+	<li>Fixed a default settings issue where Mountains were not being included</li>
+	<li>Reworked the ore distribution to speed things up a bit</li>
+	<li>Added an option for inclusion of the bedrock level lava fields</li>
+</ul>
+
+<p>v1.00</p>
+
+<ul>
+	<li>Treats and Tricks in the Bunkers and Mineshafts</li>
+	<li>Reworked the sewers... you can now get seriously lost down there</li>
+	<li>Added IncludeSeas and IncludeMountains</li>
+</ul>
+
+<p>v0.90</p>
+
+<ul>
+	<li>Bunkers and Mineshafts</li>
+	<li>Reworked the settings, you will need to wipe out your old CityWorld settings</li>
+	<li>Added command permissions and option file</li>
+</ul>
+
+<p>v0.80</p>
+
+<ul>
+	<li>Include working terrain generation</li>
+	<li>Bridges and Tunnels now generate</li>
+	<li>Radio Towers</li>
+	<li>Oil drilling platforms out where the sea is deepest</li>
+	<li>Rural blocks are back</li>
+	<li>Interiors are still missing</li>
+	<li>ISSUE: lights sometimes don&#39;t light (or do) when we want them to... seems to be a Minecraft issue</li>
+</ul>
+
+<p>v0.7x</p>
+
+<ul>
+	<li>Never released due to &quot;issues&quot;</li>
+</ul>
+
+<p>v0.63</p>
+
+<ul>
+	<li>1.2.3-R0.2 Happy</li>
+	<li>Fixed a few string and permission issues</li>
+</ul>
+
+<p>v0.62</p>
+
+<ul>
+	<li>1.2.3 R0 Happy, since Bukkit doesn&#39;t support taller generated heights yet we are still stuck at 127, sorry</li>
+</ul>
+
+<p>v0.61</p>
+
+<ul>
+	<li>1.1 R6 Happy</li>
+	<li>Clay is used instead of Iron where possible</li>
+	<li>Rooftop air conditioners now don&#39;t use End Portal Frames anymore</li>
+	<li>Config option file additions
+	<ul>
+		<li>Global.OresInSewers (true) //put the ores into the sewer vaults</li>
+		<li>Global.OresInUnderworld (true) //put the ores into the underworld</li>
+	</ul>
+	</li>
+</ul>
+
+<p>v0.60</p>
+
+<ul>
+	<li>Initial Permissions and Config file</li>
+</ul>
+
+<p>v0.57</p>
+
+<ul>
+	<li>Quickie patch to permit support for 1.1</li>
+</ul>
+
+<p>v0.56</p>
+
+<ul>
+	<li>Added occasional crane on unfinished buildings</li>
+	<li>Hacked my way around a number of roof issues, still more that can be done</li>
+	<li>Added nav lights onto the tallest antenna on a building, if it has any</li>
+</ul>
+
+<p>v0.55</p>
+
+<ul>
+	<li>Theming of city blocks (highrise, midrise, lowrise, big parks, etc.)</li>
+	<li>First pass of roofs (peaks, edges, antennas, air conditioners, etc.)</li>
+</ul>
+
+<p>v0.54</p>
+
+<ul>
+	<li>West is North... I really hope I have this issue nailed this time</li>
+	<li>Rounded buildings and doors seem to be happy at last!</li>
+	<li>Added unfinished buildings, just to add variety</li>
+</ul>
+
+<p>v0.52</p>
+
+<ul>
+	<li>Rounded buildings are back but I still need to get doors and stairs working with them better</li>
+	<li>Doors and stairs now position themselves better</li>
+	<li>Started support for unfinished buildings</li>
+</ul>
+
+<p>v0.51</p>
+
+<ul>
+	<li>Turned off rounded buildings... for now</li>
+</ul>
+
+<p>v0.50</p>
+
+<ul>
+	<li>Added rounded buildings.. but there are loads of issues remaining to be dealt with</li>
+</ul>
+
+<p>v0.40</p>
+
+<ul>
+	<li>Added cisterns and most of the tops of parks</li>
+	<li>Added the command &quot;CityWorld&quot;, which will teleport you to (and create) &quot;CityWorld&quot;</li>
+	<li>Added stairs back in (they might be missing in some buildings but that is pretty rare)</li>
+	<li>Added doors (like stairs they might be missing in some buildings)</li>
+	<li>Manholes are more functional (ladders and doors are down there now)</li>
+	<li>Roundabouts now have fountains, &quot;ART!&quot; or a bit of both</li>
+	<li>Got BlockPopulators working</li>
+	<li>Cleaned up the code considerably</li>
+</ul>
+
+<p>v0.30</p>
+
+<ul>
+	<li>Added sewers and plumbing</li>
+	<li>Added vaults</li>
+	<li>Added basements</li>
+	<li>Removed stairs (coming back in next release)</li>
+	<li>Better road layouts</li>
+	<li>Better building layouts</li>
+</ul>
+
+<p>v0.20</p>
+
+<ul>
+	<li>There is still much to do, but it is good beginning.</li>
+	<li>We now have a little bit of color.</li>
+	<li>There are basements and stairs but no doors... doh!</li>
+</ul>
+
+<p>v0.10</p>
+
+<ul>
+	<li>wow that is stark</li>
+</ul>
+</body>
+</html>
