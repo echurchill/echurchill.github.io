@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>&nbsp;</p>
+
+<p>Options</p>
+
+<p>A Config.yml file is generated when CityWorld first runs and each time it is told to create a new world. 
+These options only affect &quot;new generation&quot;, changing them after a world has been generated will produce some odd results.</p>
+
+<p>I have tried to ensure these options all work together but the number of permutations are pretty large. 
+Also some options are exclusive of other options, for example if you decide to not include buildings 
+then asking for the buildings, that you have excluded, to be decayed does not make much sense.</p>
+
+<p><strong>Note:</strong> Here is what I normally do when creating a new world. It is a little awkward but it works for me.</p>
+
+<ol>
+	<li>Startup your server and create the new world (via whatever technique you like), 
+	remember to read the <a href="http://echurch.github.io/cityworld/installation.html">Installation</a> instructions, 
+	this will make CityWorld generate the associated configuration section in <code>plugins/CityWorld/config.yml</code>.</li>
+	<li>Next I shut down the server go change those newly created settings to what I really want the world to be like.</li>
+	<li>Then I delete the previously created world and restart my server. 
+	If all goes well the newly created world should be regenerated but now using those new options I picked.</li>
+</ol>
+
+<p>If you are wanting to create a particular <a href="http://echurch.github.io/cityworld/styles.html">world style</a>, 
+like floating, take a look at the <a href="http://echurch.github.io/cityworld/installation">Installation</a> instructions. 
+Note: that certain world styles will turn off/on some of the options listed below.</p>
+
+<p><strong>Observations:</strong></p>
+<ul>
+	<li>If you regenerate the world using the same version, options and seed (how you set this depends on your multiverse manager works), 
+	you should get a nearly identical world, where only foliage might change. Keep in mind when there is a CityWorld version change, 
+	all bets are off though. Similar seeds might/will generated wholly new worlds.</li>
+	<li>Two worlds with the same seed but slightly different options very well could create very similar worlds. 
+	For example, assuming the seed and all other options are the same, two worlds only differing in the inclusion of the 
+	IncludeDecayedBuildings option will create two parallel worlds: One normal, one destroyed.</li>
+	<li>If you generate a new world there might not be a city nearby (or mountains, or seas, etc.). 
+	That is the nature of Random. If you do not like what you get, trash the world and generate a new one (with a different seed). 
+	Keep in mind though, the city of your dreams might be just on the other side of that mountain so go forth and explore!</li>
+	<li><i>Except where otherwise stated, all options default to true and simply control the inclusion or exclusion of a certain feature or not.</i></li>
+</ul>
+
+
+</body>
+</html>
