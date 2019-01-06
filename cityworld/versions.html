@@ -3,29 +3,48 @@
 	<title>Versions</title>
 </head>
 <body>
-
 <h3>Index of useful info</h3>
+
 <ul>
-<li><a href="http://echurch.github.io/cityworld/installation.html/">Installation...</a> <i>Start Here!</i></li>
-<li><a href="http://echurch.github.io/cityworld/options.html">Options...</a></li>
-<li><a href="http://echurch.github.io/cityworld/styles.html">Styles...</a></li>
-<li><a href="http://echurch.github.io/cityworld/schematics.html">Schematics...</a></li>
-<li><a href="http://echurch.github.io/cityworld/commands.html">Commands...</a></li>
-<li><a href="http://echurch.github.io/cityworld/versions.html">Version info...</a> <b>(you are here)</b></li>
-<li><a href="http://echurch.github.io/cityworld/tools.html/">Tools I used to make this...</a></li>
-<li><a href="http://echurch.github.io/cityworld/copyright.html">Copyright...</a></li>
+	<li><a href="http://echurch.github.io/cityworld/installation.html/">Installation...</a> <i>Start Here!</i></li>
+	<li><a href="http://echurch.github.io/cityworld/options.html">Options...</a></li>
+	<li><a href="http://echurch.github.io/cityworld/styles.html">Styles...</a></li>
+	<li><a href="http://echurch.github.io/cityworld/schematics.html">Schematics...</a></li>
+	<li><a href="http://echurch.github.io/cityworld/commands.html">Commands...</a></li>
+	<li><a href="http://echurch.github.io/cityworld/versions.html">Version info...</a> <b>(you are here)</b></li>
+	<li><a href="http://echurch.github.io/cityworld/tools.html/">Tools I used to make this...</a></li>
+	<li><a href="http://echurch.github.io/cityworld/copyright.html">Copyright...</a></li>
 </ul>
 
 <p>&nbsp;</p>
 
 <h2>Versions</h2>
 
+<p>v4.000</p>
+
+<ul>
+	<li>Requires 1.13.2 Minecraft/Spigot</li>
+	<li>Lots of changes in order to support the new material system</li>
+	<li>Lots of changes in order to support the new creatures</li>
+	<li>Lots of hidden features are now more frequent</li>
+	<li>Still occasional bugs related to fences, panes, etc.</li>
+</ul>
+
+<p>v3.020</p>
+
+<ul>
+	<li>REQUIRES 1.12 Minecraft/Spigot!</li>
+	<li>Chests are now generating in buildings, their contents can be configured</li>
+	<li>Version verification shouldn&#39;t cause anymore problems with previews</li>
+	<li>Tree generation is configurable via SpawnTrees valid range is 0.0 to 1.0. The bigger the number the more trees, the smaller the less.</li>
+	<li>Now with Polar bears and Bats (not in the same place)</li>
+	<li>I have once again removed support for FLOATING worlds, the performance bug that caused problems earlier has popped up again and the world generation is so slow for those worlds that Spigot just gives up. I am looking into the issue and once I figure out what is going on, I will bring it back. Sorry.</li>
+</ul>
+
 <p>v3.018</p>
 
 <ul>
-	<li>Made CityWorld more resilient to WorldEdit issue. 
-	Now if WorldEdit has an issue, instead of causing an exception, CityWorld will simply not use WorldEdit... 
-	mind you it also means you won't get schema pasting.</li>
+	<li>Made CityWorld more resilient to WorldEdit issue. Now if WorldEdit has an issue, instead of causing an exception, CityWorld will simply not use WorldEdit... mind you it also means you won&#39;t get schema pasting.</li>
 </ul>
 
 <p>v3.017</p>
@@ -37,7 +56,7 @@
 <p>v3.016</p>
 
 <ul>
-	<li>Added Government buildings along with many new monument types... including one to Minecraft's Deity: The Chicken</li>
+	<li>Added Government buildings along with many new monument types... including one to Minecraft&#39;s Deity: The Chicken</li>
 </ul>
 
 <p>v3.015</p>
@@ -46,7 +65,6 @@
 	<li>Made the <code>/CityWorld</code> command tell users about the various world types it knows about when presented with incorrect info</li>
 	<li>Made the <code>/CityInfo</code> command more resilient to non-CityWorld situations</li>
 </ul>
-
 
 <p>v3.014</p>
 
@@ -59,22 +77,16 @@
 <ul>
 	<li>Fixed a bug in my minecraft/spigot version checking, sorry about that</li>
 	<li>Fixed a three and four wide chest issue, thanks <b>NullBlox</b> for the great bug report</li>
-	<li>Found and fixed an issue if you call <code>/CityChunk regen</code> on a chunk that happened to have an entrance/exit 
-	to bunker in it. It was a very interesting effect and I hope to never see it again.</li>
+	<li>Found and fixed an issue if you call <code>/CityChunk regen</code> on a chunk that happened to have an entrance/exit to bunker in it. It was a very interesting effect and I hope to never see it again.</li>
 	<li>Fixed an issue where debris would be floating up in the air instead of on the ground</li>
 	<li>Fixed a rare situation where occasionally trees formed in road tunnel entrances</li>
 	<li>Fixed a block removal problem that sometimes would happen when an entities spawned in</li>
 	<li>Fixed a backfill issue with roundabouts</li>
 	<li>Removed museums from industrial areas, increased the odds of them in the city center</li>
 	<li>Added more variety to factories</li>
-	<li>Added experimental villager naming support, if you don't like it you can set the new option <code>NameVillagers</code> to <code>FALSE</code>. 
-	To turn off the automatic showing of the villager's name set the <code>ShowVillagersNames</code> to <code>FALSE</code>.
-	I know the names are a bit too US/Euro centric but getting an unified list of the top names in the world is hard.
-	If you come across one send it my way. Regardless, you can customize the list.</li>
+	<li>Added experimental villager naming support, if you don&#39;t like it you can set the new option <code>NameVillagers</code> to <code>FALSE</code>. To turn off the automatic showing of the villager&#39;s name set the <code>ShowVillagersNames</code> to <code>FALSE</code>. I know the names are a bit too US/Euro centric but getting an unified list of the top names in the world is hard. If you come across one send it my way. Regardless, you can customize the list.</li>
 	<li>Speaking of customizing, you can now customize the street and fossil names too!</li>
-	<li>Minecraft (1.9.4 and 1.10) and Spigot (as of 6/16) happy.
-	It does not add any of the new blocks or entity in by default but you should be able to 
-	include them in your world by adding them to the custom material and entity lists.</li>
+	<li>Minecraft (1.9.4 and 1.10) and Spigot (as of 6/16) happy. It does not add any of the new blocks or entity in by default but you should be able to include them in your world by adding them to the custom material and entity lists.</li>
 </ul>
 
 <p>v3.012</p>
@@ -223,8 +235,7 @@
 	<li>WARNING: WorldEdit itself has changed quite a bit, I haven&#39;t tried to update the CityWorld for the latest incarnation of WorldEdit. If it works, great. If not, it will eventually. SORRY</li>
 </ul>
 
-<p>
-<strong>The above versions are found at&nbsp;<a href="https://www.spigotmc.org/resources/cityworld.2250/">https://www.spigotmc.org/resources/cityworld.2250/</a></strong></p>
+<p><strong>The above versions are found at&nbsp;<a href="https://www.spigotmc.org/resources/cityworld.2250/">https://www.spigotmc.org/resources/cityworld.2250/</a></strong></p>
 
 <p><strong>---------------------------</strong></p>
 
